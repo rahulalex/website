@@ -1,0 +1,418 @@
+﻿:root {
+    --main-bg-color: #031b87;
+    --secondery-bg-color: #3db3ec;
+    --heading-blue-color: #031b87;
+    --section-light-bg: #222529;
+    --topbar-bg: #000;
+    --copyright-bg: #000;
+    --CommonGradient: linear-gradient(to left, #C5DD7D 34%, #2D8E82 100%);
+}
+
+
+body {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+}
+
+ul {
+    list-style: none
+}
+p, a, span, li {
+    font-size: 16px;
+}
+
+.commonTyping p {
+    font-size: 20px;
+    line-height: 36px;
+}
+.headingSecions h3 {
+    font-size: 60px;
+}
+
+    .headingSecions h3 span {
+        background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 60px;
+    }
+/*TopBar*/
+.TopBar {
+    background: var(--topbar-bg);
+}
+
+
+        .TopBar ul li {
+            margin: 0px 20px;
+            font-style: italic;
+            color: #fff;
+        }
+/*logobar*/
+.logobar {
+    background: none;
+    position: absolute;
+}
+
+
+.HeaderSections {
+    /*background: url('../img/Banner_home.jpg') no-repeat 0px -340px;*/
+    background: url('../img/Banner_home.jpg') no-repeat 0px 100%;
+    background: url('../img/images/16_Adobe_Artificial_EarthMap.jpg') no-repeat 0px 100%;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.logoimg {
+    max-width:130px;
+}
+.navbarEdit .nav-link {
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+.navbarEdit .nav-link.active {
+    background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.navbar-toggler {
+    font-size: 22px;
+    background: var(--CommonGradient);
+    color: #fff;
+    border: solid 2px #7fc78c;
+    display: inline-block;
+    border-radius: 4px;
+    margin-left: 10px;
+    padding: 0px 18px;
+}
+.CommonBtn {
+    background: var(--CommonGradient);
+    color: #fff;
+    display: block;
+    width: 100%;
+    border: solid 2px #7fc78c;
+}
+
+.headerFix {
+    position:fixed;
+    top:0px;
+    z-index:9999;
+    background:#000;
+    transition:all .3s;
+}
+/*AboutUs*/
+.AboutUs {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: url('../img/abtBg.jpeg') fixed;
+    background-size:cover;
+    position: relative;
+}
+    .AboutUs::before {
+        background: #0a0b1d;
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: .95;
+    }
+
+/*OurProducts*/
+.OurProducts {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+    background: url('../img/OurProducts.jpg') fixed;
+    background-size: cover;
+    position: relative;
+}
+
+    .OurProducts::before {
+        background: #0a0b1d;
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: .95;
+    }
+    .OurProducts .items {
+        margin:0px 10px;
+    }
+    .OurProducts .items .card{
+        border:solid 1px #C5DD7D;
+        background:none;
+        text-align:center;
+    }
+        .OurProducts .items .card h4 {
+            background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin:15px 0px;
+            
+        }
+.ProductList button.slick-arrow {
+    display:none !important;
+}
+.ProductList .slick-dots {
+    bottom:-30px;
+    text-align:center;
+}
+.ProductList .card-img {
+    height:250px;
+}
+    .ProductList .card-img img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+
+/*OurService*/
+.OurService {
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+    background: url('../img/abtBg.jpeg') fixed;
+    background-size: cover;
+    position: relative;
+}
+
+    .OurService::before {
+        background: #0a0b1d;
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: .95;
+    }
+
+.ServiceItem {
+    display:flex;
+}
+
+.ServiceItemHeading {
+    background: #094257;
+    border-right: #C5DD7D solid 1px;
+    cursor:pointer;
+}
+    .ServiceItemHeading h4 {
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 15px 10px;
+    }
+
+
+.ServiceItem.active .ServiceItemHeading {
+    background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+    color:#fff;
+}
+    .ServiceItem.active .ServiceItemHeading h4 {
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        color: #fff;
+    }
+.ServiceItemContent {
+    width: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 360px;
+    overflow: hidden;
+    position:relative;
+}
+
+
+
+
+.BGUrbanplanning {
+    background: url('../img/images/AssetMonitor.jpg') no-repeat;
+    background-size: cover;
+}
+.bgEmissionMonitoring {
+    background: url('../img/images/EmissionMonitor.jpeg') no-repeat;
+    background-size: cover;
+}
+.bgParkingManagement {
+    background: url('../img/images/ParkingOccupancyMonitor.jpg') no-repeat;
+    background-size: cover;
+}
+.bgUrbanMobilityMonitoring {
+    background: url('../img/images/MobilityMonitor.jpg') no-repeat;
+    background-size: cover;
+}
+.bgUrbandataanalyticalresearch {
+    background: url('../img/images/UrbanDataAnalyticalResearch.jpg') no-repeat;
+    background-size: cover;
+}
+.ServiceItemContent::before {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    content:"";
+    left:0px;
+    top:0px;
+    width:100%;
+    height:100%;
+}
+
+
+
+.ServiceItemContent p {
+    color: #fff;
+    font-style: italic;
+    display: none;
+    position:relative;
+    z-index:999;
+}
+.ServiceItem.active .ServiceItemContent {
+    width: 100%;
+    padding: 15px;
+    transition:all .2s;
+}
+.ServiceItem.active .ServiceItemContent p{
+    display:block;
+}
+
+/*Subscribe*/
+.Subscribe {
+    background: var(--CommonGradient);
+}
+/*footer*/
+.Contact {
+    background: var(--section-light-bg);
+    padding-top:100px !important;
+    padding-bottom:100px !important;
+}
+    .Contact .form-control {
+        background: none;
+        border: solid 1px #4b5056;
+        color: #fff;
+        min-height: 65px;
+    }
+        .Contact .form-control::placeholder {
+            color: #5e666f;
+        }
+    .Contact label {
+        color: #8e969f;
+        display: block;
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+.iconsColor h4 i {
+    background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size:40px;
+    margin-right:10px;
+}
+.iconsColor h4 {
+   color:#fff;
+   font-size:18px;
+   margin:0px;
+}
+.social li{
+    margin-right:5px;
+}
+    .social li a {
+        display: block;
+        color: #fff;
+        background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 44px;
+        height: 44px;
+        border: solid 1px #c5dd7d;
+        margin-right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        border-radius: 0px 15px;
+    }
+/*copyright*/
+.copyright {
+    background: var(--copyright-bg);
+}
+.copyright p {
+    text-align:center;
+    color:#fff;
+}
+    .copyright p span {
+        background: linear-gradient(to right, #FFFFFF 0%, #C5DD7D 34%, #2D8E82 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+@media(max-width:1199px) {
+    .ServiceItemContent {
+        height:480px;
+    }
+}
+@media(max-width:991px) {
+    .ServiceItemContent {
+        height:600px;
+    }
+    .commonTyping .ServiceItemContent p {
+        font-size:18px !important
+    }
+}
+@media(max-width:767px) {
+    .ServiceItemContent {
+        height:auto;
+    }
+    .commonTyping .ServiceItemContent p {
+        font-size:18px !important
+    }
+
+    .ServiceItemHeading h4 {
+        transform: unset !important;
+        writing-mode: unset !important;
+        margin: 0px;
+        padding: 15px;
+    }
+    .ServiceItem {
+        display:block !important;
+    }
+    .serviceList {
+        display:block !important;
+    }
+    .ServiceItem.active .ServiceItemHeading h4 {
+        color: #2D8E82;
+    }
+}
+@media(max-width:640px) {
+    .headingSecions h3, .headingSecions h3 span {
+        font-size: 34px !important;
+    }
+    .AboutUs, .OurProducts, .OurService, .Subscribe, .Contact {
+        padding-top:80px !important;
+        padding-bottom:80px !important;
+    }
+}
+
+@media(min-width:991px) {
+    .navbar-toggler {
+        display:none !important;
+    }
+}
+
+@media(max-width:991px) {
+    .menuDiv #navbarNavDropdown {
+        background: #2D8E82;
+    }
+    .MenuAlignMent {
+        justify-content:flex-start !important;
+    }
+}
+
+.modal {
+    z-index:9999999;
+}
